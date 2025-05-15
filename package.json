@@ -5,13 +5,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+  
+  "dev": "vite",
   "build": "vite build",
-
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite build; vite preview --host"
+  "deploy": "gh-pages -d dist",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite build && vite preview --host"
+},
+
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
